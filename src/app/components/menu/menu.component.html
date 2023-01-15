@@ -1,5 +1,15 @@
 <p>
   <mat-toolbar color="primary">
-    <span>My Application</span>
+    <span>{{title}} <fa-icon [icon]="['fas', 'code']"></fa-icon></span>
+    <span class="example-spacer"></span>
+    <span *ngFor="let items of medias">
+
+      <span [ngSwitch]="items.id">
+          <a mat-mini-fab class="space-button" color="primary" href="{{items.link}}" target="_blank" *ngSwitchCase="1"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+          <a mat-mini-fab class="space-button" color="primary" href="{{items.link}}" target="_blank" *ngSwitchCase="2"><fa-icon [icon]="['fab', 'linkedin-in']"></fa-icon></a>
+          <a mat-mini-fab class="space-button" color="primary" href="{{items.link}}" target="_blank" *ngSwitchCase="3"><fa-icon [icon]="['far', 'envelope']"></fa-icon></a>
+          <a mat-mini-fab class="space-button" color="primary" href="{{items.link}}" target="_blank" *ngSwitchCase="4 "><fa-icon [icon]="['fab', 'whatsapp']"></fa-icon></a>
+      </span>
+    </span>
   </mat-toolbar>
 </p>
