@@ -12,12 +12,19 @@ import {fas} from '@fortawesome/free-solid-svg-icons';
 import {far} from '@fortawesome/free-regular-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import {MatCardModule} from "@angular/material/card";
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    PresentationComponent
+    PresentationComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +32,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
