@@ -1,6 +1,6 @@
 <p>
   <mat-toolbar role="heading" color="primary">
-    <span>{{title}} <fa-icon [icon]="['fas', 'code']"></fa-icon></span>
+    <span><b>{{title}}</b>&nbsp;<fa-icon [icon]="['fas', 'code']"></fa-icon></span>
     <span class="example-spacer"></span>
     <span *ngFor="let items of medias">
       <span [ngSwitch]="items.id">

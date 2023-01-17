@@ -10,6 +10,6 @@ export class FooterComponent implements OnInit{
   title: string = "";
 
   ngOnInit(): void {
-    this.title = "©2023 by Lucas Rosa";
+    this.title = "Powered by Lucas Rosa © - 2023";
   }
 }
